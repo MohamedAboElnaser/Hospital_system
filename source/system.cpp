@@ -20,7 +20,7 @@ Patient System::readPatient(){
     Patient temp;
     cout<<"Pleas Enter Specialization[1-20] ,Name and Status[0,1]: \n";
     cout<<"Specialization: ";   cin>>temp.specialization_number;
-    cout<<"Name: ";             cin>>temp.name;
+    cout<<"Name: ";             getline(cin,temp.name);
     cout<<"Status: ";           cin>>temp.is_urgent;
 
     return temp;
